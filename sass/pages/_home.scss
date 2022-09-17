@@ -1,0 +1,41 @@
+.container {
+  background-color: var(--grey-1);
+  //@include abscenter;
+  margin: 8rem auto;
+  max-width: 120rem;
+  min-height: 50rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  @include respond(tab-land) {
+    margin: 0 auto;
+  }
+}
+.header {
+  background-color: var(--white);
+  height: 8rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--grey-3);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+.side-bar {
+  background-color: var(--grey-5);
+  flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.eatery-view {
+  background-color: var(--grey-2);
+  flex: 1;
+}

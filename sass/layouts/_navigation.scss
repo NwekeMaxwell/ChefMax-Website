@@ -1,0 +1,104 @@
+.side-nav {
+  font-size: 70%;
+  list-style: none;
+  margin-top: 3.5rem;
+  background-color: var(--grey-5);
+
+  @include respond(tab-port) {
+    display: flex;
+    margin-top: 0;
+  }
+
+  @include respond(tab-land) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+
+  &-item {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 0;
+      }
+    }
+    @include respond(phone) {
+      width: 25%;
+    }
+  }
+  &-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: var(--pink-1);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+      background-color 0.1s;
+    transform: scale(0);
+  }
+  &-item:hover::before,
+  &-item-active::before {
+    transform: scale(1);
+    width: 100%;
+  }
+
+  &-item:active::before {
+    background-color: var(--pink-1);
+  }
+
+  &-link:link,
+  &-link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--grey-1);
+    display: block;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &-text {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &-icon {
+    height: 5rem;
+    width: 3.5rem;
+    margin-right: 2rem;
+    fill: currentColor;
+    @include respond(tab-port) {
+      height: 4rem;
+      width: 3rem;
+    }
+    @include respond(phone) {
+      height: 3rem;
+      width: 2rem;
+    }
+  }
+}
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--grey-4);
+  text-align: center;
+  padding: 2.5rem;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}

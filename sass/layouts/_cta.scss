@@ -1,0 +1,15 @@
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &-booknow {
+    font-size: 65%;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+
+    @include respond(tab-land) {
+      font-size: 60%;
+    }
+  }
+}

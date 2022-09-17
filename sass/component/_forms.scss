@@ -1,0 +1,80 @@
+.book {
+  margin: 5rem;
+  border-radius: 4px;
+  @include respond(phone) {
+    margin: 2rem;
+  }
+  padding: 5rem;
+  background-size: cover;
+  background-image: linear-gradient(
+      -120deg,
+      rgba(orangered, 0.5) 0%,
+      rgba(white, 0.6) 50%,
+      transparent 50%
+    ),
+    url(../img/chicken2.jpeg);
+}
+h4 {
+  margin-left: 55%;
+  @include respond(phone) {
+    margin-left: 0;
+    font-size: 70%;
+    width: 100%;
+  }
+}
+.form {
+  text-align: center;
+  margin-left: 55%;
+  font-size: 1.75rem;
+  @include respond(phone) {
+    margin-left: 0;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+
+  &-label {
+    font-size: 1.25rem;
+  }
+  &-input {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid var(--grey-5);
+    }
+    &:focus:invalid {
+      border-bottom: 3px solid var(--pink-1);
+    }
+  }
+  &-input::placeholder {
+    font-size: 1.3rem;
+  }
+  &-email {
+    font-size: 1.25rem;
+  }
+
+  &-search {
+    margin-top: 2rem;
+    padding: 0.8rem 1.9rem;
+    border: none;
+    border-radius: 2px;
+    width: 70%;
+    &:focus {
+      outline: none;
+      border-left: 15px solid var(--pink-3);
+    }
+  }
+  &-btn {
+    font-size: 1.75rem;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+}
+label {
+  font-size: 1rem;
+}

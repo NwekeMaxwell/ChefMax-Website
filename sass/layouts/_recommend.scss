@@ -1,0 +1,27 @@
+.desc {
+  &-recommend {
+    font-size: 1.5rem;
+    color: var(--grey-5);
+    padding: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    &-paragraph {
+      margin-right: auto;
+    }
+
+    &-user-img {
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%;
+      border: 5px solid var(--white);
+      &:not(:last-child) {
+        margin-right: -2.2rem;
+      }
+    }
+  }
+}

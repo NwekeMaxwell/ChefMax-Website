@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ChefMax</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/chef-logo.jpeg" alt="Trillo logo" class="logo" />
+        <form action="#quest" class="search">
+          <input type="text" class="search-input" placeholder="your order?" />
+          <button class="search-button">
+            <svg class="search-icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav-icon-box">
+            <svg class="user-nav-icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav-notification">7</span>
+          </div>
+
+          <div class="user-nav-icon-box">
+            <svg class="user-nav-icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav-notification">13</span>
+          </div>
+          <div class="user-nav-user">
+            <img
+              src="img/Myself.jpg"
+              alt="User photo"
+              class="user-nav-user-photo"
+            />
+            <span class="user-nav-username">Maxwell</span>
+          </div>
+        </nav>
+      </header>
+      <!-- Navigation -->
+      <div class="content">
+        <nav class="side-bar">
+          <ul class="side-nav">
+            <li class="side-nav-item side-nav-item-active">
+              <a href="#cat" class="side-nav-link">
+                <svg class="side-nav-icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span class="side-nav-text">African Dishes</span>
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a href="#cat" class="side-nav-link">
+                <svg class="side-nav-icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span class="side-nav-text">Continental dishes</span>
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a href="#cat" class="side-nav-link">
+                <svg class="side-nav-icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span class="side-nav-text">Home-made Dishes</span>
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a href="#cat" class="side-nav-link">
+                <svg class="side-nav-icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span class="side-nav-text">European Dishes</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">&copy; 2022 by Chef~Max. All rights reserved</div>
+        </nav>
+        <!--main details-->
+        <main class="details">
+          <!--Gallery-->
+          <div class="gallery">
+            <figure class="gallery-view">
+              <img
+                src="img/flakes.gif"
+                alt="food-image-1"
+                class="gallery-photo"
+              />
+            </figure>
+
+            <figure class="gallery-view">
+              <img
+                src="img/salad.gif"
+                alt="food-image-2"
+                class="gallery-photo"
+              />
+            </figure>
+
+            <figure class="gallery-view">
+              <img
+                src="img/burgers.gif"
+                alt="food-image-3"
+                class="gallery-photo"
+              />
+            </figure>
+          </div>
+          <!--overview-->
+          <div class="overview">
+            <h1 class="overview-heading">ChefMax~Food World Int'l</h1>
+
+            <div class="overview-stars">
+              <svg class="overview-icon-stars">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview-icon-stars">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview-icon-stars">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview-icon-stars">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview-icon-stars">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overiew-location">
+              <svg class="overview-icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Golf Estate, Enugu, Nigeria.</button>
+            </div>
+
+            <div class="overview-rating">
+              <div class="overview-rating-average">8.6</div>
+              <div class="overview-rating-count">429 votes</div>
+            </div>
+          </div>
+
+          <!--description-->
+          <div class="Eatery-view">
+            <h6 class="text2" id="cat"> &darr; Browse Categories &darr;</h6>
+            <div class="showcase" >
+              <!-- 1 -->
+                <figure class="showcase-pics">
+                  <img src="../img/beef.jpeg" alt="beef" class="showcase-img" />
+                  <a href="#quest" class="showcase-link">
+                   <p class="showcase-name">Beef Meal</p>
+                  </a>
+                </figure>
+              
+              <!-- 2 -->
+             
+                <figure class="showcase-pics">
+                  <img
+                    src="../img/chicken.jpeg"
+                    alt="chicken"
+                    class="showcase-img"
+                  />
+                  <a href="#quest" class="showcase-link">
+                   <p class="showcase-name">Chicken Dish</p>
+                  </a>
+                </figure>
+              
+              <!-- 3 -->
+              
+                <figure class="showcase-pics">
+                  <img src="../img/goat.jpeg" alt="goat" class="showcase-img" />
+                  <a href="#quest" class="showcase-link">
+                   <p class="showcase-name">Goat dish</p>
+                  </a>
+                </figure>
+              
+              <!-- 4 -->
+              
+                <figure class="showcase-pics">
+                  <img src="../img/pork.jpeg" alt="pork" class="showcase-img" />
+                  <a href="#quest" class="showcase-link">
+                   <p class="showcase-name">Pork meal</p>
+                  </a>
+                </figure>
+             
+              <!-- 5 -->
+              
+                <figure class="showcase-pics">
+                  <img src="../img/ribs.jpeg" alt="ribs" class="showcase-img" />
+                  <a href="#quest" class="showcase-link"/>
+                   <p class="showcase-name">ribs serving</p>
+                  </a>
+                </figure>
+              
+              <!-- 6 -->
+             
+                <figure class="showcase-pics">
+                  <img
+                    src="../img/liver.jpeg"
+                    alt="liver dish"
+                    class="showcase-img"
+                  />
+                  <a href="#quest" class="showcase-link">
+                   <p class="showcase-name">Liver Meal</p>
+                  </a>
+                </figure>
+                <button class="btn-inline btn-showcase">
+                  Show all <span>&rarr;</span>
+                </button>
+             
+            </div>
+            <div class="detail">
+              <div class="desc">
+                <h2 class="heading1">CHEF MAX!! F.W.I</h2>
+                <p class="desc-paragraph">
+                  Delicious Meals at
+                  <strong> CHEF MAX!! Food World International!.</strong> Walk in and
+                  witness our Food home, a home of comfortable feeding. Your
+                  Taste is our Priority. Enjoy Nutritious and Luxurious Meals at
+                  comfort.
+                </p>
+                <p class="desc-paragraph">
+                  Make a choice! Sit back and relax as we deliver to your table
+                  or Apartment! All affordable. We provide neat and world most natural
+                  food! Enjoy Africa's recipe in Glory. We
+                  await your order>>>
+                </p>
+                <ul class="desc-list">
+                  <li class="desc-list-items">free wifi</li>
+                  <li class="desc-list-items">air conditioned</li>
+                  <li class="desc-list-items">close to beach</li>
+                  <li class="desc-list-items">All languages accepted</li>
+                  <li class="desc-list-items">free coffee</li>
+                  <li class="desc-list-items">Perfect for couples</li>
+                  <li class="desc-list-items">we celebrate with you</li>
+                  <li class="desc-list-items">Highly affordable</li>
+                </ul>
+                <div class="desc-recommend">
+                  <p class="desc-recommend-paragraph">
+                    Ifuuu and 3 other friends recommended
+                  </p>
+                  <div class="desc-recommend-img">
+                    <img
+                      src="img/user1.jpg"
+                      alt="User-photo "
+                      class="desc-recommend-user-img"
+                    />
+                    <img
+                      src="img/user2.jpg"
+                      alt="User-photo "
+                      class="desc-recommend-user-img"
+                    />
+                    <img
+                      src="img/user4.jpg"
+                      alt="User-photo "
+                      class="desc-recommend-user-img"
+                    />
+                    <img
+                      src="img/user5.jpg"
+                      alt="User-photo "
+                      class="desc-recommend-user-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!--review right-->
+              <div class="user-review">
+                <figure class="review">
+                  <docquote class="review-text">
+                    what a beautiful Eatery! I love the neatness and tasty
+                    chicken. Am definitely coming back with all my friends and
+                    family.
+                  </docquote>
+                  <figcaption class="review-user">
+                    <img
+                      src="../img/user3.jpeg"
+                      alt="user photo"
+                      class="review-photo"
+                    />
+                    <div class="review-user-box">
+                      <p class="review-user-name">Sixtus</p>
+                      <p class="review-user-date">Aug 16, 2022</p>
+                    </div>
+                    <div class="review-rating">7.8</div>
+                  </figcaption>
+                </figure>
+                <!-- 2 -->
+                <figure class="review">
+                  <docquote class="review-text">
+                    Food world Int'l!!!! My profound respect! so happy to taste
+                    an African food today! wow!! love love love'''
+                  </docquote>
+                  <figcaption class="review-user">
+                    <img
+                      src="../img/Myself.jpg"
+                      alt="user photo"
+                      class="review-photo"
+                    />
+                    <div class="review-user-box">
+                      <p class="review-user-name">Okpuzu</p>
+                      <p class="review-user-date">Aug 17, 2022</p>
+                    </div>
+                    <div class="review-rating">9.3</div>
+                  </figcaption>
+                </figure>
+                <button class="btn-inline btn-rev">
+                  Show all <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- booking section -->
+          <div class="book" id="quest">
+            <h4 class="heading">Your Orders?? Our Services!!!</h4>
+            <form action="#" class="form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" required  class="form-input" placeholder="full name" id="name"> <br>
+
+                <label for="email" class="form-email">Email Address</label>                
+                <input type="email" required  class="form-input" placeholder="Email Address" id="email"> <br>
+
+                <input type="text" placeholder="Search Dishes" class="form-search">
+              </div>
+              <button class="btn  form-btn" > Order Now!</button>
+            </form>
+          </div>
+          <!-- special offers -->
+          <div id="special">
+            <h1 class="slider-heading">Special Offers!!! ✈</h1>
+            <div class="div-slider">
+              <div class="slider"></div>
+              <p class="slider-text">-50% OFF!!!</p>
+            </div>
+          </div>
+          <!--cta end-->
+          <div class="cta">
+            <h2 class="cta-booknow">
+              Good News! We have 4 extra servings for your selected food!
+            </h2>
+            <button class="btn">
+              <span class="btn-visible">Book Now!</span>
+              <span class="btn-invisible">Extra 2 Free servings!</span>
+            </button>
+          </div>
+          <footer class="footer"> &copy; 2022 by Chef~Max. All rights reserved</footer>
+        </main>
+        
+      </div>
+    </div>
+  </body>
+</html>

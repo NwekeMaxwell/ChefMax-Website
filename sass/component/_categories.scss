@@ -1,0 +1,44 @@
+.showcase {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  @include respond(phone) {
+    padding: 1rem;
+  }
+  grid-gap: 5rem;
+  border-bottom: 1px solid var(--grey-4);
+
+  &-link:link,
+  &-link:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+
+  &-pics {
+    box-shadow: 0 2rem 5rem rgba(#000, 0.4);
+    background-color: orangered;
+    border-radius: 5px;
+    &:hover,
+    &:active {
+      transform: translateY(-3px);
+    }
+  }
+
+  &-img {
+    height: 25rem;
+    display: block;
+    width: 100%;
+  }
+
+  &-name {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    &:hover {
+      background-color: var(--pink-2);
+    }
+  }
+}

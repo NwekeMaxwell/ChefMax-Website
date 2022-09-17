@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--grey-5);
+  color: var(--grey-1);
+  font-size: 40%;
+  padding: 2rem;
+  text-align: center;
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
