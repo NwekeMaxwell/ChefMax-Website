@@ -10,11 +10,16 @@
     flex-direction: column;
   }
 }
+
 .desc {
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  background: linear-gradient(to right, rgba(#fff, 0.95), rgba(#fff, 0.95)),
+    url(../img/chef-logo.jpeg);
+  background-size: contain;
+
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   font-size: 65%;
   margin-right: 4.5rem;
-  background-color: var(--white);
+
   flex: 0 0 60%;
 
   @include respond(tab-land) {
