@@ -1,5 +1,4 @@
 ﻿# ChefMax-Website
-https://nwekemaxwell.github.io/ChefMax-Website/
 My second HTML|CSS website. 
 Practicing flexbox, CSS Animations, Responsive Web Design and SASS(SCSS).
 I wrote all HTML|CSS codes by MYSELF!!!
