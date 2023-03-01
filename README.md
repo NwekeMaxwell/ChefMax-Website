@@ -1,5 +1,5 @@
-﻿# ChefMax-Website
- https://chefmax.netlify.app/
+# https://chefmax.netlify.app/
+# ChefMax-Website
 My second HTML|CSS website. 
 Practicing flexbox, CSS Animations, Responsive Web Design and SASS(SCSS).
 I wrote all HTML|CSS codes by MYSELF!!!
